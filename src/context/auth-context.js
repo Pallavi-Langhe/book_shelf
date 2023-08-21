@@ -1,8 +1,7 @@
-import { useContext, createContext, useReducer, useEffect } from "react";
+import { useContext, createContext, useReducer } from "react";
 import { useToast } from "./toast-context";
 import axios from "axios";
 import { userInitialState, authReducer } from "reducer/auth-reducer";
-
 
 const AuthContext = createContext();
 
@@ -17,8 +16,8 @@ const AuthProvider = ({ children }) => {
         e.target.value === "user"
           ? JSON.stringify(formData)
           : {
-              email: "kajalkumari@gmail.com",
-              password: "kajalkumari",
+              email: "PallaviLanghe@gmail.com",
+              password: "PallaviLanghe",
             }
       );
       //saving the token in localstorage
@@ -111,22 +110,19 @@ const AuthProvider = ({ children }) => {
     );
     authDispatch({ type: "logOut" });
   };
-  const checkTokenHandler = async () =>{
-    const encodedToken = localStorage.getItem("token")
-    if(encodedToken) {
-      try{
-        const response = await axios.post("/api/auth/verify",{
+  const checkTokenHandler = async () => {
+    const encodedToken = localStorage.getItem("token");
+    if (encodedToken) {
+      try {
+        const response = await axios.post("/api/auth/verify", {
           encodedToken,
         });
-        authDispatch({type:"loggedIn",payload:response.data.user})
-      }
-      catch(err){
-        console.log(err)
+        authDispatch({ type: "loggedIn", payload: response.data.user });
+      } catch (err) {
+        console.log(err);
       }
     }
-    
-  
-  }
+  };
   return (
     <AuthContext.Provider
       value={{
@@ -135,7 +131,7 @@ const AuthProvider = ({ children }) => {
         loginHandler,
         signupHandler,
         logoutHandler,
-        checkTokenHandler
+        checkTokenHandler,
       }}
     >
       {children}

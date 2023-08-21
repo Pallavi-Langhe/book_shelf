@@ -5,17 +5,17 @@ describe("test auth reducers", () => {
     const state = authReducer(userInitialState, {
       type: "loggedIn",
       payload: {
-        firstName: "Kajal",
-        lastName: "Kumari",
-        email: "kajalkumari@gmail.com",
+        firstName: "Pallavi",
+        lastName: "Langhe",
+        email: "PallaviLanghe@gmail.com",
         _id: 1,
       },
       token:"1234"
     });
     const expectedState = {
-      firstName: "Kajal",
-      lastName: "Kumari",
-      email: "kajalkumari@gmail.com",
+      firstName: "Pallavi",
+      lastName: "Langhe",
+      email: "PallaviLanghe@gmail.com",
       id: 1,
       msg:"",
       isAuthTokenPresent:true,
@@ -28,17 +28,17 @@ describe("test auth reducers", () => {
       const state = authReducer(userInitialState,{
           type:"signup",
           payload:{
-            firstName: "Kajal",
-            lastName: "Kumari",
-            email: "kajalkumari@gmail.com",
+            firstName: "Pallavi",
+            lastName: "Langhe",
+            email: "PallaviLanghe@gmail.com",
             _id: 1, 
           },
           token:"1234"
       });
       const expectedState = {...userInitialState,
-        firstName: "Kajal",
-        lastName: "Kumari",
-        email: "kajalkumari@gmail.com",
+        firstName: "Pallavi",
+        lastName: "Langhe",
+        email: "PallaviLanghe@gmail.com",
         id: 1, 
         isAuthTokenPresent:true,
         authToken:"1234"
