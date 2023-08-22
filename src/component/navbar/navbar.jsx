@@ -6,7 +6,7 @@ import { useAside } from "context/aside-context";
 import { useProduct } from "context/product-context";
 import "./navbar.css";
 import { debounce } from "functions";
-import { useAuth } from "context/auth-context";
+// import { useAuth } from "context/auth-context";
 const Navbar = () => {
   const [searchBar, setSearchBar] = useState(false);
   const [searchText, setSearchText] = useState("");
@@ -38,10 +38,16 @@ const Navbar = () => {
           <i className="fa fa-bars fa-2x"></i>
         </div>
         <div className="logo">
-          <h1 className="header-logo"><Link to="/" className="decor-none">Beads & Beyonds....</Link></h1>
-          <small className="slogan">Decorate your world with us</small>
+          <h1 className="header-logo">
+            <Link to="/" className="decor-none">
+              Bookshelf{" "}
+            </Link>
+          </h1>
+          <small className="slogan">
+            There is no friend as loyal as a book.
+          </small>
         </div>
-        <div className="mr-auto page-link-wrapper font3">
+        <div className="page-link-wrapper font3">
           <ul className="style-list-none">
             <li className="inline-block">
               <NavLink exact={true} className="page-link decor-none " to="/">
@@ -66,8 +72,8 @@ const Navbar = () => {
           >
             {localStorage.getItem("token") ? (
               <i className="fa fa-user fa-lg" id="user-icon"></i>
-              ) : (
-                <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i>
+            ) : (
+              <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i>
             )}
           </Link>
           <Link

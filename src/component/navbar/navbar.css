@@ -29,6 +29,7 @@ box-shadow: -4px 15px 6px -15px rgba(0,0,0,0.75);
 }
 .page-link-wrapper {
   margin: 0.8rem 1.2rem;
+  justify-items: center;
 }
 .page-link-wrapper > ul > li {
   padding: 0rem 1rem;

@@ -74,7 +74,7 @@ export const Checkout = () => {
       key: process.env.REACT_APP_RAZORPAY_KEY,
       currency: "INR",
       amount: totalAmt * 100,
-      name: "Beads and Beyonds",
+      name: "BookShelf",
       description: "Thanks for shopping with us!",
       prefill: {
         name: "Jane Doe",
