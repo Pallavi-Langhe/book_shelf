@@ -46,19 +46,20 @@ box-shadow: -4px 15px 6px -15px rgba(0,0,0,0.75);
   font-weight: 600;
 }
 .badge-container {
-  margin: auto 2rem auto 0rem;
+  margin: auto 2rem auto 2rem;
 }
 .badge-container > i,
 .badge-container > a {
   padding: 0.3rem 0.4rem;
   cursor: pointer;
-  color: var(--dark);
+  color: #260827;
   opacity: 0.8;
 }
 .badge-container > i:hover,
 .badge-container > a:hover {
   transform: scale(1.05, 1.05);
   opacity: 1;
+  margin-right: 2px;
 }
 .status-circle {
   background-color: var(--primary);
