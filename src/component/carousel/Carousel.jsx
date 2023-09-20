@@ -53,13 +53,16 @@ const Carousel = () => {
                     />
                   </div>
                   <div className="right-pane centered vertical-direction">
-                    <h2 className="mb-lg font1">{item.name}</h2>
+                    <h2 className="mb-lg font1">Welcome to Pustaka,</h2>
                     <p className="font2 text-secondary">
-                      Starting at{" "}
-                      <span className="text-vibrant">₹{item.minPrice}</span>.
+                    
+                    For All Your
+                    Reading Needs
+                      {/* Starting at{" "} */}
+                      {/* <span className="text-vibrant">₹{item.minPrice}</span>. */}
                     </p>
-                    <strike>₹{item.originalPrice}</strike>
-                    <span className="text-success font4 mb-lg">50% off</span>
+                    {/* <strike>₹{item.originalPrice}</strike> */}
+                    {/* <span className="text-success font4 mb-lg">50% off</span> */}
                     <Link
                       to="/products"
                       className="reset decor-none bg-secondary light-text padding-sm rm-border"
