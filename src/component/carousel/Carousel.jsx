@@ -53,11 +53,9 @@ const Carousel = () => {
                     />
                   </div>
                   <div className="right-pane centered vertical-direction">
-                    <h2 className="mb-lg font1">Welcome to Pustaka,</h2>
+                    <h2 className="mb-lg font1">Welcome to BookShelf,</h2>
                     <p className="font2 text-secondary">
-                    
-                    For All Your
-                    Reading Needs
+                      For All Your Reading Needs
                       {/* Starting at{" "} */}
                       {/* <span className="text-vibrant">₹{item.minPrice}</span>. */}
                     </p>
