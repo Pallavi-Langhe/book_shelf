@@ -37,6 +37,7 @@ $ npm start
 - Javascript
 - ReactJs
 - ReactRouter
+- React hooks
 - Context API
 - font-awesome
 - mockbee
