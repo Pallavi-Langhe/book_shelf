@@ -1,12 +1,11 @@
-import React,{useEffect, useState} from "react";
+import React, { useState } from "react";
 import { useProduct } from "context/product-context";
 import { CategoryList } from "./CategoryList";
 
 export const Filters = () => {
-const [filter, setFilter] = useState(false);
-const { state, dispatch } = useProduct();
-const categoriesArr = ["painting","decorations","toys","home"]
-
+  const [filter, setFilter] = useState(false);
+  const { state, dispatch } = useProduct();
+  const categoriesArr = ["fiction", "motivational", "humor", "thriller"];
 
   return (
     <>
@@ -55,10 +54,9 @@ const categoriesArr = ["painting","decorations","toys","home"]
 
           <div className="category-section">
             <h4 className="mb-lg">CATEGORY</h4>
-           {categoriesArr.map((category,i )=>  (
-               <CategoryList category={category} key={i}/>
-           ))}
-        
+            {categoriesArr.map((category, i) => (
+              <CategoryList category={category} key={i} />
+            ))}
           </div>
           <hr />
           <div className="rating-section">

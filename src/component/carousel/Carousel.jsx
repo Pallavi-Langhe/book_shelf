@@ -48,7 +48,7 @@ const Carousel = () => {
                   <div className="left-pane">
                     <img
                       src={item.image}
-                      alt="painting"
+                      alt="motivational"
                       className="responsive-img"
                     />
                   </div>

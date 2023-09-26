@@ -12,10 +12,10 @@ describe("testing product filters" ,()=>{
     test("should set the filter by category" ,()=>{
         const state = productReducer(initProductState,{
             type:"FILTER",
-            payload:"decorations"
+            payload:"fiction"
 
         })
-        const expectedState = {...initProductState,categoryBy:["decorations"]};
+        const expectedState = {...initProductState,categoryBy:["fiction"]};
         expect(state).toEqual(expectedState);
     })
     test("should set rating",()=>{
