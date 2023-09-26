@@ -40,7 +40,7 @@ $ npm start
 - Context API
 - font-awesome
 - mockbee
-- netlify
+- vercel
 
 
 ## **Demo -**
