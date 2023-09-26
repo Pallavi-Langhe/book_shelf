@@ -44,6 +44,7 @@ $ npm start
 
 
 ## **Demo -**
-https://github.com/Pallavi-Langhe/book_shelf/assets/91686147/f4c6c572-409d-4eb4-b25d-77127a026a90
 
+
+https://github.com/Pallavi-Langhe/book_shelf/assets/91686147/c35c46c7-c4a5-40c7-b6b0-3feb01fd7352
 
