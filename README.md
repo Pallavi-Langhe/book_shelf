@@ -44,4 +44,6 @@ $ npm start
 
 
 ## **Demo -**
-https://www.loom.com/share/c2b6769c59d342539fb79c0ec6dea543?sid=e66fa421-925b-4f9d-8c6c-56e30e05181c.mp4
+https://github.com/Pallavi-Langhe/book_shelf/assets/91686147/f4c6c572-409d-4eb4-b25d-77127a026a90
+
+
