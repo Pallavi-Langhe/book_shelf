@@ -20,17 +20,17 @@ $ npm start
   - User signup/login
   - User logout
   - Demo login
--Cart Management
--Wishlist Management
--Product Listing page with several filters and sort by price
--Search implementation with debounce
--Single Product Page
--Apply coupon
--Address management
--Payment integration through Razorpay
--Image magnifier for product
--Profile page with order and address tab
--completely responsive
+- Cart Management
+- Wishlist Management
+- Product Listing page with several filters and sort by price
+- Search implementation with debounce
+- Single Product Page
+- Apply coupon
+- Address management
+- Payment integration through Razorpay
+- Image magnifier for product
+- Profile page with order and address tab
+- completely responsive
 
 
 ## **Tech stack:**
